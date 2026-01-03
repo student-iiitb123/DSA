@@ -1,0 +1,45 @@
+public class spiral {
+    public static void main(String[] args) {
+
+        int[][] arr = {
+            {1, 2, 3, 4},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12},
+            {13, 14, 15, 16}
+        };
+
+        int sr = 0, sc = 0;
+        int er = 3, ec = 3;
+
+        while (sr <= er && sc <= ec) {
+
+            // → top row
+            for (int i = sc; i <= ec; i++) {
+                System.out.print(arr[sr][i] + " ");
+            }
+            sr++;
+
+            // ↓ right column
+            for (int i = sr; i <= er; i++) {
+                System.out.print(arr[i][ec] + " ");
+            }
+            ec--;
+
+            // ← bottom row
+            if (sr <= er) {
+                for (int i = ec; i >= sc; i--) {
+                    System.out.print(arr[er][i] + " ");
+                }
+                er--;
+            }
+
+            // ↑ left column
+            if (sc <= ec) {
+                for (int i = er; i >= sr; i--) {
+                    System.out.print(arr[i][sc] + " ");
+                }
+                sc++;
+            }
+        }
+    }
+}
