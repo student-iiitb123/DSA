@@ -1,1 +1,2 @@
- int count =0;
+
+    StringBuilder sb = new StringBuilder(str);
