@@ -1,5 +1,3 @@
-
-
 public class reverse {
     public static void main(String[] args) {
         StringBuilder str = new StringBuilder("the sky is blue");
@@ -21,7 +19,7 @@ public class reverse {
             s++;
            }else{
             int z =0;
-            s =z;
+            s =z; 
             while(start< z){          
                   char temp = str.charAt(start);
             str.setCharAt(start, str.charAt(z-1));
@@ -35,7 +33,7 @@ public class reverse {
            }
 
              for(int m =0;m<str.length();m++){
-        System.out.print(str.charAt(m));
+        System.out.print(str.charAt(m)); 
     }
                 
             
@@ -43,3 +41,6 @@ public class reverse {
     }
     
 }
+
+
+
