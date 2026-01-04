@@ -14,30 +14,46 @@ public class Revesrse {
             
          }
        
-       int k=0;
-       int l= 2;
-        while(k<l){
-            char temp = str.charAt(k);
-            str.setCharAt(k, str.charAt(l));
-            str.setCharAt(l, temp);
-            k++;
-            l--;
-        }
+  
 
-        int c = 4;
-        int d = str.length() -1;
-        while(c<d){
-             char temp = str.charAt(c);
-            str.setCharAt(c, str.charAt(d));
-            str.setCharAt(d, temp);
-            c++;
-            d--;
+    int k =0;
+   
 
-        }
-         for (int m = 0; m < str.length(); m++) {
-            System.out.print(str.charAt(m));
-        }
+    while(str.charAt(k) != ' '){
+       k++;
+    }
+    int start  =0;
+    int end = k-1;
+  
+    while(start<end){
+         char temp = str.charAt(start);
+            str.setCharAt(start, str.charAt(end));
+            str.setCharAt(end, temp);
+            start++;
+            end--;
+    }
 
+    int second_start = k+1;
+    int second_end = str.length()-1;
+
+    
+
+     while(second_start<second_end){
+         char temp = str.charAt(second_start);
+            str.setCharAt(second_start, str.charAt(second_end));
+            str.setCharAt(second_end, temp);
+            second_start++;
+            second_end--;
+    }
+
+
+
+
+    for(int m =0;m<str.length();m++){
+        System.out.print(str.charAt(m));
+    }
+
+   
         
     }
    
