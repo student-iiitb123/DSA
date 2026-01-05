@@ -8,8 +8,8 @@ public class plusone {
          int number =0;
          int powers = arr.length-1;
         for(int k =0;k<arr.length;k++){
-number += arr[k] * (int)Math.pow(10, powers); 
-    powers--; 
+        number += arr[k] * (int)Math.pow(10, powers); 
+        powers--; 
           
         }
        int new_number = number+1;
