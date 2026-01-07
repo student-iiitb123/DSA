@@ -10,7 +10,7 @@ public class SubStringrecursion {
     }
     public static void main(String[] args) {
         String str = "abc";
-        String s = " ";
+        String s = " "; //empty String
         SubString(str,0,s);
     }
 }
