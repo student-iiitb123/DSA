@@ -17,7 +17,7 @@ public class SubStringPrint {
         String SubString = "";
 
         SubStringPrintall(Str,SubString);
-        
+        //print all substring
         
         
     }
