@@ -1,1 +1,1 @@
-i++;
+SubStringPrintall(str, str2, i+1);
