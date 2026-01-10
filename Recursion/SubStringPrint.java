@@ -1,24 +1,25 @@
 public class SubStringPrint {
-    public static void SubStringPrintall(String str,String str2) {
-        if(str.length()==str2.length()){
-            System.out.println(str2);
+
+    public static void printSubstringEnd(String s, int start, int end) {
+        if (end > s.length()) {
             return;
         }
-        
-  for(int i =0;i<str.length();i++){
-    SubStringPrintall(str, str2+str.charAt(i));
-   
-  }
-        
 
+        System.out.println(s.substring(start, end));
+        printSubstringEnd(s, start, end + 1);
     }
-    public static void main(String[] args) {
-        String Str ="abcab";
-        String SubString = "";
 
-        SubStringPrintall(Str,SubString);
-        //print all substring
-        
-        
+    public static void printSubstring(String s, int start) {
+        if (start >= s.length()) {
+            return;
+        }
+
+        printSubstringEnd(s, start, start + 1);
+        printSubstring(s, start + 1);
+    }
+
+    public static void main(String[] args) {
+        String str = "abc";
+        printSubstring(str, 0);
     }
 }
