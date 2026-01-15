@@ -41,5 +41,6 @@ public class Rotated {
         int target = 0;
         int index = Rotatedarr(arr, target, 0, arr.length - 1);
         System.out.println(index);
+        
     }
 }
