@@ -3,7 +3,7 @@
 public class Majority {
 public static int merge(int arr[], int lo, int mid, int hi,
                         int leftMajor, int rightMajor) {
-
+// CONT LEFT MAJOR RIGHT MAJOR
     if (leftMajor == rightMajor) {
         return leftMajor;
     }
@@ -33,6 +33,7 @@ public static int merge(int arr[], int lo, int mid, int hi,
     public static void main(String[] args) {
         int arr[] = {2,2,1,1,1,2,2};
     int ans = majority(arr, 0, arr.length - 1);
+    // ANSWER
     System.out.println(ans);
     }
 }
