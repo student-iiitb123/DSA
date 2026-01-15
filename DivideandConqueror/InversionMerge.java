@@ -10,7 +10,7 @@ public class InversionMerge {
 
         while (i <= mid && j <= end) {
             if (arr[i] <= arr[j]) {
-                // No inversion, copy left element
+             
                 temp[k++] = arr[i++];
             } else {
                 inversionCount += (mid - i + 1);
