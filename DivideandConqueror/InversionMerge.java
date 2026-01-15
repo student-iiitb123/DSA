@@ -13,18 +13,16 @@ public class InversionMerge {
                 // No inversion, copy left element
                 temp[k++] = arr[i++];
             } else {
-                // Inversion found: all remaining elements in left are > arr[j]
                 inversionCount += (mid - i + 1);
                 temp[k++] = arr[j++];
             }
         }
 
-        // Copy remaining elements from left half
         while (i <= mid) {
             temp[k++] = arr[i++];
         }
 
-        // Copy remaining elements from right half
+   
         while (j <= end) {
             temp[k++] = arr[j++];
         }
