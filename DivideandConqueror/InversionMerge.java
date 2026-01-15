@@ -27,7 +27,7 @@ public class InversionMerge {
             temp[k++] = arr[j++];
         }
 
-        // Copy merged elements back to original array
+    
         for (i = start, k = 0; i <= end; i++, k++) {
             arr[i] = temp[k];
         }
