@@ -1,1 +1,1 @@
-class Subset
+ System.out.println(a);
