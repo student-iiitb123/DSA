@@ -20,6 +20,7 @@ public class Comb {
     }
     public static void main(String[] args){
         int arr[] = {1,2,3};
+        //Declaring 
         ArrayList<Integer> a = new ArrayList<>();
       comb(arr,0,a);
 
