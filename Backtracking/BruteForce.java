@@ -14,7 +14,9 @@ public class BruteForce {
 
 
         int number = n.charAt(index) - '0';
-        String letters = arr[number];
+        String letters = arr[number];  
+
+
 
         for (int j = 0; j < letters.length(); j++) {
                                                    
@@ -23,10 +25,9 @@ public class BruteForce {
             // Recurse for next digit
             combination(n, arr, result, index + 1, current); 
             // Backtrack: remove last letter to try next option
-            current.deleteCharAt(current.length() - 1);
-
-
+            current.deleteCharAt(current.length() -1);
         }
+
     }
 
          public static void main(String[] args) {
@@ -35,6 +36,13 @@ public class BruteForce {
          ArrayList<String> result = new ArrayList<>();
          combination(n, arr, result, 0, new StringBuilder());
          System.out.println(result);
+
+        
+
+
+
+
+
 
 
     }
