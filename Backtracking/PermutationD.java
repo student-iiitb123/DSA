@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Combination {
+public class PermutationD {
     public static void combination(int arr[],int start,boolean a[],ArrayList<Integer> list){
         if(start== arr.length){
             System.out.println(list);
@@ -30,3 +30,4 @@ public class Combination {
     }
     
 }
+
