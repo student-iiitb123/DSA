@@ -8,7 +8,7 @@ public class Delete {
             this.next = null;
         }
     }
-    public static void DeletePosition(Node Head,int position ){
+    public static void DeletePosition(Node Head , int position ){
         int i =0;
         Node temp = Head;
         while(i == position-1){
