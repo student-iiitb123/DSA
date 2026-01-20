@@ -36,7 +36,7 @@ public class KnodeReverse {
             head.next = reverseK(next, k);
         }
 
-        return prev; // new head
+        return prev; 
     }
 
     public static void print(Node head) {
