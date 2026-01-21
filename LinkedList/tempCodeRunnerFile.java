@@ -1,2 +1,1 @@
- // int t = temp.data;
-        // System.out.println(t);
+ Head.next.next.next = new Node(4);
