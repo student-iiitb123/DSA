@@ -26,6 +26,7 @@ public class MergeSort {
     }
     public static void MergeSort(Node Head,Node mid){
 
+
     }
     public static void main(String[] args) {
             Node Head = new Node(1);
@@ -36,5 +37,6 @@ public class MergeSort {
        Node s =   mid(Head);
        MergeSort(Head,s);
        System.out.print(s.data);
+       //merge
     }
 }
