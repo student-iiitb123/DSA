@@ -11,7 +11,7 @@ public class MergeSort {
             this.next = null;
         }
     }
-    public static Node mid(Node Head){
+    public static Node getmid(Node Head){
       Node slow = Head;
       Node fast = Head.next;
     
@@ -24,7 +24,23 @@ public class MergeSort {
       }
       return slow;
     }
-    public static void MergeSort(Node Head,Node mid){
+
+    public static 
+    public static void MergeSort(Node Head){
+        //find mid;
+       Node mid = getmid(Head);
+    
+       Node rightHead = mid.next;
+       mid.next = null;
+
+       MergeSort(Head);
+       MergeSort(rightHead);
+       merge(Head,rightHead);
+     
+
+
+        //right side 
+        //left side 
 
 
     }
@@ -34,9 +50,9 @@ public class MergeSort {
           Head.next.next = new Node(3);
           Head.next.next.next = new Node(4);
 
-       Node s =   mid(Head);
-       MergeSort(Head,s);
-       System.out.print(s.data);
+    
+      MergeSort(Head);
+     
        //merge
     }
 }

@@ -6,7 +6,7 @@ public class FriendPairing {
 
     }
     public static void main(String[] args) {
-        int n =3;
+        int n =6;
        int c = pair(n);
        System.out.println(c);
     }

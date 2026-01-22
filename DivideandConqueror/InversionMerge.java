@@ -1,12 +1,10 @@
-
-
 public class InversionMerge {
        static int inversionCount = 0;
       public static void merge(int arr[], int start, int mid, int end) {
-        int temp[] = new int[end - start + 1]; // temp array to store merged elements
-        int i = start;       // pointer for left half
-        int j = mid + 1;     // pointer for right half
-        int k = 0;           // pointer for temp array
+        int temp[] = new int[end - start + 1]; 
+        int i = start;       
+        int j = mid + 1;     
+        int k = 0;           
 
         while (i <= mid && j <= end) {
             if (arr[i] <= arr[j]) {
@@ -38,7 +36,6 @@ public class InversionMerge {
 
         Inversion(arr, start, mid);
         Inversion(arr, mid+1, end);
-        //merge
         merge(arr,start,mid,end);
 
     }
@@ -54,3 +51,8 @@ public class InversionMerge {
     }
     
 }
+
+
+
+
+

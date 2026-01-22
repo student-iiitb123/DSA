@@ -11,19 +11,19 @@ public class Slid {
 
         while (sr <= er && sc <= ec) {
 
-            // 1️⃣ top row
+            //  top row
             for (int i = sc; i <= ec; i++) {
                 System.out.print(arr[sr][i] + " ");
             }
             sr++;
 
-            // 2️⃣ right column
+            //  right column
             for (int i = sr; i <= er; i++) {
                 System.out.print(arr[i][ec] + " ");
             }
             ec--;
 
-            // 3️⃣ bottom row
+            //  bottom row
             
                 for (int i = ec; i >= sc; i--) {
                     System.out.print(arr[er][i] + " ");
@@ -31,7 +31,7 @@ public class Slid {
                 er--;
             
 
-            // 4️⃣ left column
+            // left column
           
                 for (int i = er; i >= sr; i--) {
                     System.out.print(arr[i][sc] + " ");
