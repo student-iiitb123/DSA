@@ -26,7 +26,7 @@ public class llstack{
            
             a.next = head;
         head = a;
-            //add data
+         
          }
 
          public static int pop(){
