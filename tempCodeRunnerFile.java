@@ -1,1 +1,1 @@
- // if(i>=j) break;
+ q.remove();
