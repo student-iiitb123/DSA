@@ -12,7 +12,7 @@ public class CircularQueue {
         arr = new int[size];
     }
 
-    // ENQUEUE
+   
     void enqueue(int val){
 
         // full
