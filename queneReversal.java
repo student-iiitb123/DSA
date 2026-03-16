@@ -1,11 +1,17 @@
-import java.util.*;
 public class queneReversal{
-    public static void main(String[] args) {
-        Quene<Integer> q = new LinkedList<>();
-        q.add(1);
-        q.add(2);
-        q.add(3);
+     static class quene{
+        int arr[];
+        int size;
+        int rear ;
 
-        //loop kaha tak jayega ye nahi pata 
+        public static void quene(int size){
+              int arr[] = new int[size];
+              rear = -1;
+
+        }
+
+    }
+    public static void main(String[] args) {
+       
     }
 }
