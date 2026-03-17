@@ -1,10 +1,16 @@
-  int d = k-1;
-    //    int f = arr.length -1;
 
-    //    while(d<f){
-    //     int temp = arr[d];
-    //     arr[d] = arr[f];
-    //     arr[f] = temp;
-    //     k--;
-    //     l++;
-    //    }
+                    System.out.println("-1");
+                }
+                else{
+                     System.out.println(q.peek());
+                }
+            
+            }else{
+                q.add(ch);
+                  if(q.isEmpty()){
+                    System.out.println("-1");
+                }
+                else{
+                     System.out.println(q.peek());
+                }
+               
