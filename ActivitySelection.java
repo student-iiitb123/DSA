@@ -1,19 +1,34 @@
+import java.util.*;
+
 public class ActivitySelection {
     public static void main(String args[]){
-        int start[] = {1,3,0,5,8,5};
-        int end[] = {2,4,6,7,9,9};
-        int count = 1;
-        int i =1;
-        int last = end[0];
-        while(i<end.length){
-            if(start[i] >= last){
-                count++;
-                last = end[i];
-              
+        ArrayList<Integer> a = new ArrayList<>();
+      
+        int start[] = {1,2,3};
+        int end[] = {10,3,4};
+          int TwoDarray[][] = new int[start.length][3];
+          for(int i =0;i<start.length;i++){
+             TwoDarray[i][0] = i;
+             TwoDarray[i][1] = start[i];
+             TwoDarray[i][2] = end[i];
+          }
+          //lamda function;
+            Arrays.sort(TwoDarray, Comparator.comparingDouble(o -> o[2]));
+
+        int maxActivity = 1;
+        a.add(TwoDarray[0][0]);
+        int lastJob = TwoDarray[0][2];
+        for(int i=1;i<start.length;i++){
+            if(TwoDarray[i][1] >= lastJob){
+                a.add(TwoDarray[i][0]);
+                maxActivity++;
+                lastJob = TwoDarray[i][2];
+
             }
-             i++;
-           
         }
-        System.out.print(count);
+      for(int i =0;i<a.size();i++){
+        System.out.print("A"+a.get(i)+ " ");
+      }
+       
     }
 }
