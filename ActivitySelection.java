@@ -6,4 +6,14 @@ public class ActivitySelection {
         int i =1;
         int last = end[0];
         while(i<end.length){
-            if(s
+            if(start[i] >= last){
+                count++;
+                last = end[i];
+              
+            }
+             i++;
+           
+        }
+        System.out.print(count);
+    }
+}

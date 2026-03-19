@@ -1,27 +1,34 @@
 import java.util.*;
 public class nonrepeating {
     public static void main(String[] args) {
-        int freq[] = new int[26];
-        Queue<Character> q = new LinkedList<>();
-        String s = "aabccxb";
-   for(int i =0;i<s.length();i++){
-    //Traverse character
-       char ch = s.charAt(i);
-       q.add(ch);
-       freq[ch-'a']++;
+        int arr[] = {1,3,-1,-3,5,3,6,7};
+        int k= 3;
+        int count =0;
+        int max = 0;
+        int maxnumber = 0;
+        Queue<Integer> q = new LinkedList<>();
+        for(int i =0;i<arr.length;i++){
+            
+            if(count != k){
+                q.add(arr[i]);
+                if(max < arr[i]){
+                    max = arr[i];
+                }
+                maxnumber =Math.max(max,maxnumber);
+               count++;
+            }
+            else{
+                q.remove(q.peek());
+                count--;
+            }
 
-       while (!q.isEmpty() && freq[q.peek() -'a'] >1) { 
-           q.remove();
-       }
-      if(q.isEmpty()){
-        System.out.println("-1");
-      }
-      else{
-        System.out.println(q.peek());
-      }
+            System.out.println(maxnumber);
 
+            
 
-   }
-      
+           
+        }
+          
+
     }
 }
