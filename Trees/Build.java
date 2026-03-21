@@ -37,7 +37,7 @@ public class Build {
 
     }
 
-    public static void Inorder(Node root){
+    public static void Inorder(Node root){ //Inorder
          if(root == null){
             return;
         }
