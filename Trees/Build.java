@@ -46,7 +46,7 @@ public class Build {
         Inorder(root.right);
     }
 
-    public static void postOrder(Node root){
+    public static void postOrder(Node root){ //post order
      if(root == null){
             return;
         }
