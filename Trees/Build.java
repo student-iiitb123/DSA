@@ -1,5 +1,3 @@
-
-
 public class Build {
     static  class Node{
         int data;
@@ -26,17 +24,16 @@ public class Build {
 
             newNode.left = PreOrderBuild(nodes);
             newNode.right = PreOrderBuild(nodes);
-
             return newNode;
         }
 
-          public static void preorder(Node root){
+          public static void preorder(Node root){ //preOrder
         if(root == null){
             return;
         }
         System.out.println(root.data);
          preorder(root.left);
-         preorder(root.right);
+         preorder(root.right); 
 
     }
 
