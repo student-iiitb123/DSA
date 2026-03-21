@@ -13,7 +13,7 @@ public class BuyandSell {
             }
             else{
                 j++;
-
+ 
             }
           
             
