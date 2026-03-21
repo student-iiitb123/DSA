@@ -4,7 +4,7 @@ public class height {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t >= 0){
+        while(t-- > 0){
          int n = sc.nextInt();
          int s = sc.nextInt();
          int x = sc.nextInt();
@@ -18,9 +18,9 @@ public class height {
             sum = sum + arr[i];
          }
          if(sum == s){
-            System.out.print("yes");
+            System.out.println("yes");
          }
-         else if(sum < s){
+         else{
             while(sum < s){
                 sum = sum + x;
                  }
@@ -34,8 +34,10 @@ public class height {
 
             
          }
+         
         
         }
+      
     }
     
 }
