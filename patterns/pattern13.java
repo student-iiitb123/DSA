@@ -6,8 +6,9 @@ public class pattern13 {
                 System.out.print(count);
                 count++;
             }
-            System.out.println();
+              System.out.println();
         }
     }
-    
-}
+ }
+
+
