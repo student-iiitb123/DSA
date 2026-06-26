@@ -1,0 +1,1 @@
+ sum = sum + Math.pow(lastNumber,count);
