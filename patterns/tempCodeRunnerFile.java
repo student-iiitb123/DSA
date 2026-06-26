@@ -1,1 +1,1 @@
-  System.out.print( i-k+1  );
+ public static void main(String[] args) {
