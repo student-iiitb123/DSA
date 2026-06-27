@@ -1,5 +1,9 @@
 public class HighestandLowest {
+
     public static void main(String[] args) {
+
+        int max = 0;
+        int min = Integer.MAX_VALUE;
 
         int arr[] = {10, 5, 10, 15, 10, 5};
         boolean visited[] = new boolean[arr.length];
@@ -20,9 +24,12 @@ public class HighestandLowest {
                 }
             }
 
-            // Print the element and its frequency
-            System.out.println(arr[i] + " -> " + frequency);
+            // Update after counting is complete
+            max = Math.max(max, frequency);
+            min = Math.min(min, frequency);
         }
 
+        System.out.println("Maximum Frequency = " + max);
+        System.out.println("Minimum Frequency = " + min);
     }
 }
