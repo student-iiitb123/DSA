@@ -18,4 +18,15 @@ public class BubbleSort {
     
 }
 
-//differnce between buuble and selection sort 
+// recursive approch
+//BubbleSort(arr,si,ei)
+//recursion+forloop
+
+//public static void BubbleSort(int arr[],int si,int ei){
+//  for(int j=si;j<arr.length;j++){
+            //     if(arr[i] > arr[j]){
+            //        int temp = arr[i];
+            //        arr[i] = arr[j];
+            //        arr[j] = temp;
+            //     }
+            // } }
