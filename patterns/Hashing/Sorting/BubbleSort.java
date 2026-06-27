@@ -17,3 +17,5 @@ public class BubbleSort {
     }
     
 }
+
+//differnce between buuble and selection sort 
