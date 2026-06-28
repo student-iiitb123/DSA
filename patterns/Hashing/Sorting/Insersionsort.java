@@ -19,7 +19,7 @@ public class Insersionsort {
     public static void main(String[] args) {
         int arr[] = {13,46,24,52,20,9};
       
-        //     int curr = arr[i];
+     
         //     int perv = i-1;
         //     while(perv >= 0 && arr[perv]>curr){
         //        arr[perv+1] = arr[perv];
