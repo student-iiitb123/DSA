@@ -21,13 +21,7 @@ public class Insersionsort {
       
      
       
-        //     while(perv >= 0 && arr[perv]>curr){
-        //        arr[perv+1] = arr[perv];
-        //        perv--;
-        //     }
-        //     arr[perv+1] = curr;
-        // }
-
+      
         outer(arr,1);
 
         for(int i =0;i<arr.length;i++){
