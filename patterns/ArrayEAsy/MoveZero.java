@@ -34,7 +34,7 @@ public class MoveZero {
     }
 
     for(int l =0;l<arr.length;l++){
-        System.out.print(arr[l]);
+        System.out.println(arr[l]);
     }
     }
     
