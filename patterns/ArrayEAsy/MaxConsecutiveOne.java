@@ -7,7 +7,7 @@ public class MaxConsecutiveOne {
         int max =0;
 
         
-        //find first one;
+   
         while(j<arr.length && i<arr.length){
             if(arr[j] == 1){
               frequency++;
