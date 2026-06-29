@@ -14,3 +14,7 @@ public class question {
    System.out.print(maxElement);
     }
 }
+
+
+//Method 1 = Sorting NlogN;
+//Method2 = 
