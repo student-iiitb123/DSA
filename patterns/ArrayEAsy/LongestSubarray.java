@@ -7,23 +7,21 @@ public class LongestSubarray {
         int sum =0;
         int count =0;
         int max =0;
-        while(j<arr.length && i<arr.length){
+        while(j<arr.length){
+
           sum = sum + arr[j];
 
-          if(sum <= k){
-            count = count +1;
-            j++;
-            max = Math.max(max, count);
-            
-          }
-          else{
-
-            sum = sum -arr[i];
-            count = count - 1;
+          while(i<arr.length && sum > k){
+            sum = sum - arr[i];
+            count--;
             i++;
-            j++;
-            
-          }
+         }
+
+         count++;
+         j++;
+         max = Math.max(max, count);
+
+         
         }
         System.out.print(max);
 
