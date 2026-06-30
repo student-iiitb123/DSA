@@ -5,7 +5,7 @@ public class LongestSubarray {
         int j = 0;
         int k = 15;
         int sum =0;
-        int count =0;
+      
         int max =0;
         while(j<arr.length){
 
@@ -13,13 +13,14 @@ public class LongestSubarray {
 
           while(i<arr.length && sum > k){
             sum = sum - arr[i];
-            count--;
+           
             i++;
          }
 
-         count++;
+      
+         max = Math.max(max, j-i+1);
+          
          j++;
-         max = Math.max(max, count);
 
          
         }
