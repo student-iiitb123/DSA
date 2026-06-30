@@ -1,27 +1,17 @@
 public class MaxConsecutiveOne {
     public static void main(String[] args) {
-        int arr[] = {0,1,0,1,1,1,1};
-        int i =0;
-        int j =0;
-        int frequency=0;
-        int max =0;
-
-        
-   
-        while(j<arr.length && i<arr.length){
-            if(arr[j] == 1){
-              frequency++;
-              j++;
-              max = Math.max(max,frequency);
-
+        int arr[] = {1,1,0,1};
+        int count =0;
+        int max = 0;
+        for(int i =0;i<arr.length;i++){
+            if(arr[i] == 1){
+                count++;
+                max = Math.max(max,count);
             }else{
-                frequency = 0;
-                i++;
-                j++;
+                count =0;
             }
         }
         System.out.print(max);
-
-
+     
     }
 }
