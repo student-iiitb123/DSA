@@ -1,38 +1,46 @@
-import java.util.HashMap;
+import java.util.*;
 
 public class PrefixSum {
     public static void main(String[] args) {
 
-        int arr[] = {9,4,0,20,3,10,5};
-        int k = 33;
+        int arr[] = {9,-3,3,-1,6,-5};
+        int k = 0;
 
-        int count = 0;
+        HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
 
-        int ps[] = new int[arr.length];
-        int sum = 0;
+        int prefixSum = 0;
 
-        for(int i = 0; i < arr.length; i++){
-            sum += arr[i];
-            ps[i] = sum;
-        }
+        // Prefix sum 0 exists before the array starts at index -1
+        map.put(0, new ArrayList<>());
+        map.get(0).add(-1);
 
-        HashMap<Integer,Integer> map = new HashMap<>();
+        for(int j = 0; j < arr.length; j++) {
 
-        for(int j = 0; j < arr.length; j++){
+            prefixSum += arr[j];
 
-            if(ps[j] == k){
-                count++;
+            int val = prefixSum - k;
+
+            // If required prefix sum exists
+            if(map.containsKey(val)) {
+
+                ArrayList<Integer> list = map.get(val);
+
+                // Print every subarray
+                for(int startIndex : list) {
+
+                    System.out.print("Subarray : ");
+
+                    for(int i = startIndex + 1; i <= j; i++) {
+                        System.out.print(arr[i] + " ");
+                    }
+
+                    System.out.println();
+                }
             }
 
-            int val = ps[j] - k;
-
-            if(map.containsKey(val)){
-                count += map.get(val);
-            }
-
-            map.put(ps[j], map.getOrDefault(ps[j],0)+1);
+            // Store current index
+            map.putIfAbsent(prefixSum, new ArrayList<>());
+            map.get(prefixSum).add(j);
         }
-
-        System.out.println(count);
     }
 }
