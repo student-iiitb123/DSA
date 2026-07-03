@@ -13,17 +13,14 @@ public class LongestSubarray {
 
           while(i<arr.length && sum > k){
             sum = sum - arr[i];
-           
-            i++;
+             i++;
          }
 
       
          max = Math.max(max, j-i+1);
-          
-         j++;
+          j++;
+    } 
 
-         
-        }
         System.out.print(max);
 
        
