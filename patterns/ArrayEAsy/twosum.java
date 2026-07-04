@@ -25,4 +25,3 @@ public class twosum {
     }
 }
 
-//.two sum
