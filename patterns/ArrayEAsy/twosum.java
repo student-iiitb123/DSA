@@ -1,4 +1,4 @@
-//two sum
+//two sum brute force approch 
 
 public class twosum {
     public static void main(String[] args) {
