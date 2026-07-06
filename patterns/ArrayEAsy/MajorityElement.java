@@ -5,7 +5,7 @@ public class MajorityElement {
         int count = 0;
         int candidate = 0;
 
-        // Phase 1: Find the candidate
+        
         for (int i = 0; i < nums.length; i++) {
 
             if (count == 0) {
