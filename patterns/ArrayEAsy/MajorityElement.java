@@ -1,7 +1,7 @@
 public class MajorityElement {
 
     public static int majorityElement(int[] nums) {
-         //take element
+         
         int count = 0;
         int candidate = 0;
 
