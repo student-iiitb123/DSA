@@ -20,7 +20,7 @@ public class MajorityElement {
             }
         }
 
-        // Phase 2: Verify the candidate
+      
         int count1 = 0;
 
         for (int i = 0; i < nums.length; i++) {
