@@ -42,4 +42,4 @@ public class MajorityElement {
 
         System.out.println("Majority Element = " + majorityElement(nums));
     }
-}
+}//majority element 
