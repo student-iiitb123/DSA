@@ -32,7 +32,7 @@ public class Intersection {
     a.add(temp);
 }
 
-            if (end1 > end2) {
+            if (end1 < end2) {
                 i++;
             } else {
                 j++;
